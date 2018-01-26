@@ -1,0 +1,209 @@
+html {
+  background-color: #1A0315;
+  color: white;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /*background-color: #fff;*/
+
+}
+
+p {
+  font-size: 25px !important;
+}
+
+a:hover {
+ cursor:pointer;
+}
+#App {
+  text-align: center;
+  padding-left: 0px;
+    padding-right: 0px;
+    background-color: #1A0315;
+    color: white;
+}
+
+header {
+  text-align: center;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+    height: auto;
+  padding: 33px 0 25px 15px;
+  background-color: white;
+}
+
+header h1 {
+
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+
+header hr {
+  margin-top: 5px;
+}
+
+.hrFormat {
+  border-color: #343a40;
+}
+
+.letterSpacing {
+  letter-spacing: '0.3px';
+}
+
+#mainList {
+  margin-right: 40px;
+    text-align: center;
+    list-style: none;
+}
+
+#modalFormat {
+  text-align: center;
+}
+
+.userContainer {
+  display: flex;
+  flex-direction: column;
+
+
+  border-radius: 2px;
+  padding: 12px 6px 6px;
+  margin-bottom: 20px;
+  background-color: #675764;
+
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12), 0 1px 8px 0 rgba(0,0,0,.2);
+  /*border-radius: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 20px;
+    background-color: #222;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12), 0 1px 8px 0 rgba(0,0,0,.2);*/
+}
+
+#mainListSection {
+  margin-right: 40px;
+  margin-left: 40px;
+  background-color: #155764;
+}
+
+#createListDiv {
+  background-color: #155764;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  color: white;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+  margin-top: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#addItemDiv, #editItemDiv {
+  /*background-color: #4A96AD;*/
+  padding-top: 1px;
+  padding-bottom: 10px;
+  color: #343a40;
+  /*margin-left: 40px;*/
+  margin-left: auto;
+  margin-right: 40px;
+  text-align: center;
+  /*margin-top: 20px;*/
+  width: 50%;
+  /*margin-left: auto;*/
+  margin-right: auto;
+  padding-left: 10px;
+    padding-right: 10px;
+    width: 80%;
+}
+
+header {
+    background-color: #222;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+}
+
+#addItemText {
+
+}
+
+#listModalTitle {
+    text-align:  center;
+    font-size: 30px;
+    color: #343a40;
+}
+
+#userBtns {
+      text-decoration: none;
+  margin-bottom: 10px;
+    /*margin-top: 10px;*/
+    color: #fff;
+    font-weight: 300;
+    padding: 15px;
+    width: 100%;
+    font-size: 25px;
+
+    background-color: #343a40;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12), 0 1px 8px 0 rgba(0,0,0,.2);
+}
+
+#editDelBtn {
+  /*margin-top: 5px;*/
+  /*margin-left: 10px;*/
+  margin-bottom: 5px;
+}
+
+#submitText {
+  font-size: 25px;
+  color: #000;
+  padding: 8px 12px;
+
+  /*border: 0;*/
+  display: block;
+  width: 100%;
+}
+
+#submitBtn {
+  background-color: #343a40;
+  border-color: #343a40;
+  color: white;
+  margin-top: 8px;
+  width: 100%;
+}
+
+#items {
+  border-radius: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+  background-color: rgb(237, 237, 237);
+
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12), 0 1px 8px 0 rgba(0,0,0,.2);
+
+}
+
+.App-logo {
+  height: 80px;
+}
+
+/*REMOVE THIS FOR SPINNING LOGO*/
+/*.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
