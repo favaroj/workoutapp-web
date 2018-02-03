@@ -16,6 +16,10 @@ p {
 a:hover {
  cursor:pointer;
 }
+
+button {
+  border: none;
+}
 #App {
   text-align: center;
   padding-left: 0px;
@@ -61,7 +65,25 @@ header hr {
     list-style: none;
 }
 
+/*MODAL FORMATTING*/
+
 #modalFormat {
+  text-align: center;
+  color: white;
+}
+
+#modalBody {
+  background-color: #1A0315;
+}
+
+#modalFooter {
+  background-color: #1A0315;
+  border-top: 0;
+  padding-top: 0px;
+}
+
+#userModalTitle {
+  font-size: 30px;
   text-align: center;
 }
 
@@ -90,7 +112,7 @@ header hr {
   background-color: #155764;
 }
 
-#createListDiv {
+#createUserDiv {
   background-color: #155764;
   padding-top: 1px;
   padding-bottom: 10px;
@@ -104,24 +126,36 @@ header hr {
   margin-right: auto;
 }
 
+span {
+  color: white;
+}
 
-
-#addItemDiv, #editItemDiv {
+#createWorkoutDiv, #editItemDiv {
   /*background-color: #4A96AD;*/
+      background-color: #155764;
   padding-top: 1px;
   padding-bottom: 10px;
-  color: #343a40;
+
   /*margin-left: 40px;*/
   margin-left: auto;
   margin-right: 40px;
+  /*margin-bottom: 0px;*/
   text-align: center;
-  /*margin-top: 20px;*/
+  margin-top: 9px;
   width: 50%;
   /*margin-left: auto;*/
   margin-right: auto;
   padding-left: 10px;
     padding-right: 10px;
     width: 80%;
+
+border-radius: 6px;
+}
+
+#workoutList {
+  margin-top: 25px;
+  font-size: 20px;
+  text-align: center;
 }
 
 header {
@@ -131,8 +165,67 @@ header {
 
 }
 
-#addItemText {
+#logExerciseHeader {
+  color: #675764;
+    font-weight: 700;
+    border-bottom: solid;
+    padding-bottom: 5px;
+}
 
+.setBtns {
+  border-radius: 50%;
+    /*background-color: #4CAF50;*/
+    /* border: 1px solid #000; */
+    /* border: none; */
+    color: white;
+    /* padding: 20px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 6px;
+    height: 50px;
+    width: 50px;
+}
+
+#weightInput {
+  width: 20%;
+    /* height: 30px; */
+    color: black;
+    /* margin-bottom: 15px; */
+    font-size: 25px;
+    text-align: center;
+}
+
+#weightLabel {
+  margin-bottom: 0px;
+  margin-right: 5px;
+  font-weight: 500;
+      font-size: 20px;
+}
+
+#weightDiv {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+#modalHeader {
+  background-color: #222;
+  border-bottom: 0;
+  color: white;
+}
+
+#createWorkoutText {
+    color: black;
+    font-size: 25px;
+    /*padding: 8px 12px;*/
+    width: 100%;
+}
+
+.modal-content {
+    background-color: transparent !important;
 }
 
 #listModalTitle {
@@ -141,7 +234,7 @@ header {
     color: #343a40;
 }
 
-#userBtns {
+#userBtns, #workoutBtns {
       text-decoration: none;
   margin-bottom: 10px;
     /*margin-top: 10px;*/
@@ -156,9 +249,11 @@ header {
 }
 
 #editDelBtn {
-  /*margin-top: 5px;*/
-  /*margin-left: 10px;*/
-  margin-bottom: 5px;
+  margin-right: 5px;
+    /* margin-top: 5px; */
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 75px;
 }
 
 #submitText {
@@ -179,7 +274,7 @@ header {
   width: 100%;
 }
 
-#items {
+#workouts {
   border-radius: 2px;
   padding-left: 6px;
   padding-right: 6px;
@@ -187,15 +282,78 @@ header {
     padding-bottom: 6px;
     margin-bottom: 20px;
     margin-right: 30px;
-  background-color: rgb(237, 237, 237);
+  background-color: #675764;
 
   box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12), 0 1px 8px 0 rgba(0,0,0,.2);
 
 }
 
 .App-logo {
-  height: 80px;
+  height: 60px;
 }
+
+#completeDiv {
+  display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+#completeBtn {
+  background-color: #155764;
+border: none;
+color: white;
+}
+
+.fc-center {
+  margin-top: 10px!important;
+}
+
+.fc-icon {
+  color: black!important;
+}
+
+
+/*Stopwatch*/
+.stopwatch { text-align: center; margin-top: 10px;}
+.stopwatch-timer {
+  font-size: 76px;
+  font-weight: 100;
+  line-height: 110px;
+
+  margin: 0;
+
+  border: solid #cecfd0;
+  border-width: 1px 0;
+  background-color: transparent;
+}
+
+.stopwatch-laps {
+  padding: 0 0 0 20px;
+  list-style-type: none;
+}
+
+.stopwatch-lap {
+  font-size: 20px;
+  line-height: 60px;
+  padding-right: 20px;
+  text-align: right;
+  border-bottom: 1px solid #d9dae0;
+}
+
+.stopwatch-lap strong {
+  float: left;
+  color: #7f8083;
+  font-weight: 100;
+}
+
+.stopwatch-lap strong::before { content: 'Lap ' }
+
+
+
+
+.start-btn { color: #4bd761 }
+.stop-btn  { color: #fd3d2a }
 
 /*REMOVE THIS FOR SPINNING LOGO*/
 /*.App-logo {
