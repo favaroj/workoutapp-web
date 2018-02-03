@@ -755,8 +755,10 @@ class App extends Component {
       <div id='App' className='container-fluid'>
         <header>
           <div className='wrapper'>
+            <h1>Workout</h1>
             <img src="Free Dumbell Icons Vector.png" className="App-logo" alt="logo"/>
-            <h1>Workout Portal<hr className="hrFormat"/></h1>
+            <h1>Portal</h1>
+            <hr className="hrFormat"/>
           </div>
           <div ></div>
         </header>

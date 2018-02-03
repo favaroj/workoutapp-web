@@ -34,7 +34,7 @@ header {
     font-family: 'Raleway', sans-serif;
     width: auto;
     height: auto;
-  padding: 33px 0 25px 15px;
+  /*padding: 33px 0 25px 15px;*/
   background-color: white;
 }
 
@@ -44,7 +44,7 @@ header h1 {
   letter-spacing: 0.3px;
   display: inline-block;
   vertical-align: middle;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
 }
 
 header hr {
@@ -60,9 +60,15 @@ header hr {
 }
 
 #mainList {
-  margin-right: 40px;
+  /*margin-right: 40px;*/
     text-align: center;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+    align-items: center;
+    padding-left: 0px;
 }
 
 /*MODAL FORMATTING*/
@@ -107,8 +113,8 @@ header hr {
 }
 
 #mainListSection {
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   background-color: #155764;
 }
 
@@ -161,7 +167,7 @@ border-radius: 6px;
 header {
     background-color: #222;
     padding-top: 9px;
-    padding-bottom: 9px;
+
 
 }
 
@@ -289,7 +295,7 @@ header {
 }
 
 .App-logo {
-  height: 60px;
+  height: 30px;
 }
 
 #completeDiv {
@@ -356,12 +362,12 @@ color: white;
 .stop-btn  { color: #fd3d2a }
 
 /*REMOVE THIS FOR SPINNING LOGO*/
-/*.App-logo {
+.App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}*/
+}
